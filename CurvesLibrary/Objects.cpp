@@ -2,7 +2,7 @@
 #include "math.h"
 #include "ObjectTypes.h"
 #include "Comparison.h"
-#include "Vector3D.h"
+
 
 Object::Object(const int id) : mId(id) {
 
@@ -30,16 +30,11 @@ Point3D Circle::computePoint(const double param) const {
 }
 
 Vector3D Circle::computeDerivative(const double param) const {
-
-	Vector3D vec;
-	vec.mStart = { 0,0,0 };
 	
-	Point3D end;
-	end.x = -mRadius * sin(param);
-	end.y = mRadius * cos(param);
-	end.z = 0;
-
-	vec.mEnd = end;
+	Vector3D vec;
+	vec.x = -mRadius * sin(param);
+	vec.y = mRadius * cos(param);
+	vec.z = 0;
 
 	return vec;
 }
@@ -86,14 +81,9 @@ Point3D Ellipse::computePoint(const double param) const {
 Vector3D Ellipse::computeDerivative(const double param) const {
 	
 	Vector3D vec;
-	vec.mStart = { 0,0,0 };
-
-	Point3D end;
-	end.x = -mMajorSemiAxis * sin(param);
-	end.y = mMinorSemiAxis * cos(param);
-	end.z = 0;
-
-	vec.mEnd = end;
+	vec.x = -mMajorSemiAxis * sin(param);
+	vec.y = mMinorSemiAxis * cos(param);
+	vec.z = 0;
 
 	return vec;
 }
@@ -150,14 +140,9 @@ Point3D Helix::computePoint(const double param) const {
 Vector3D Helix::computeDerivative(const double param) const {
 
 	Vector3D vec;
-	vec.mStart = { 0,0,0 };
-
-	Point3D end;
-	end.x = -mParamA * sin(param);
-	end.y = mParamB* cos(param);
-	end.z = mParamB;
-
-	vec.mEnd = end;
+	vec.x = -mParamA * sin(param);
+	vec.y = mParamB* cos(param);
+	vec.z = mParamB;
 
 	return vec;
 }

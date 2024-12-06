@@ -7,6 +7,8 @@ struct KERNEL_EXPORT Point3D {
 
 	friend std::ostream& operator<< (std::ostream& output, const Point3D& point);
 	friend std::istream& operator>> (std::istream&, Point3D&);
+	
+	void print() const;
 
 	double x;
 	double y;

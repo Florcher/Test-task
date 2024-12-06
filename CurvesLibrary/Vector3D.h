@@ -1,15 +1,18 @@
 #ifndef __VECTOR3D_H_
 #define __VECTOR3D_H_
 #include "Header.h"
-#include "Point3D.h"
+#include <iostream>
 
 struct KERNEL_EXPORT Vector3D {
 
 	friend std::ostream& operator<< (std::ostream&, const Vector3D&);
 	friend std::istream& operator>> (std::istream&, Vector3D&);
 
-	Point3D mStart;
-	Point3D mEnd;
+	void print() const;
+
+	double x;
+	double y;
+	double z;
 
 	using ptr = std::shared_ptr<Vector3D>;
 };

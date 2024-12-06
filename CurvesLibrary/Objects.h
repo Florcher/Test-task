@@ -1,6 +1,7 @@
 #ifndef __OBJECTS_H_
 #define __OBJECTS_H_
 #include "Header.h"
+#include <iostream>
 #include "Point3D.h"
 #include "Vector3D.h"
 

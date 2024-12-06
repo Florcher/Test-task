@@ -1,5 +1,4 @@
 #include "Point3D.h"
-#include <iostream>
 
 std::ostream& operator<< (std::ostream& output, const Point3D& point) {
 
@@ -15,4 +14,8 @@ std::istream& operator>> (std::istream& input, Point3D& point) {
 	input >> point.z;
 
 	return input;
+}
+
+void Point3D::print() const {
+	std::cout << "(" << x << ", " << y << ", " << z << ")" << std::endl;
 }

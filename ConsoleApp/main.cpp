@@ -3,7 +3,7 @@
 #include <vector>
 #include "ObjectFactory.h"
 #include <algorithm>
-#include "Point3D.h"
+
 
 int main() {
 
@@ -24,6 +24,8 @@ int main() {
 		objects[i]->setID(i + 1);
 	}
 
+	
+
 	std::cout << "Enter max parameters value: " << std::endl;
 	int maxValue;
 	std::cin >> maxValue;
@@ -35,11 +37,14 @@ int main() {
 	for (int i = 0; i < objects.size(); i++) {
 		const double Pi = 3.1415926535;
 		const double t = Pi / 4;
-		std::cout << "Curve " << objects[i]->getType() << std::endl;
+		std::cout << "Curve type " << objects[i]->getType() << std::endl;
+		std::cout << "Point coordinate: ";
 		Point3D point = objects[i]->computePoint(t);
-		std::cout << point << std::endl;
+		point.print();
+		std::cout << "Derivative coordinate: ";
 		Vector3D vec = objects[i]->computeDerivative(t);
-		//std::cout << vec << std::endl;
+		vec.print();
+		std::cout << std::endl;
 	}
 
 	std::vector<Circle::ptr> circles;

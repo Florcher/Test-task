@@ -1,15 +1,15 @@
 ﻿  ObjectFactory.cpp
-C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(41,20): warning C4506: no definition for inline function 'int Circle::Type(void)'
+C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(42,20): warning C4506: no definition for inline function 'int Circle::Type(void)'
   (compiling source file 'ObjectFactory.cpp')
   
-C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(92,20): warning C4506: no definition for inline function 'int Helix::Type(void)'
+C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(93,20): warning C4506: no definition for inline function 'int Helix::Type(void)'
   (compiling source file 'ObjectFactory.cpp')
   
-C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(66,20): warning C4506: no definition for inline function 'int Ellipse::Type(void)'
+C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(67,20): warning C4506: no definition for inline function 'int Ellipse::Type(void)'
   (compiling source file 'ObjectFactory.cpp')
   
   Objects.cpp
-  Point3D.cpp
   Vector3D.cpp
   Generating Code...
+     Creating library C:\Users\Florch\source\repos\Test task\CurvesLibrary\x64\Debug\CurvesLibrary.lib and object C:\Users\Florch\source\repos\Test task\CurvesLibrary\x64\Debug\CurvesLibrary.exp
   CurvesLibrary.vcxproj -> C:\Users\Florch\source\repos\Test task\CurvesLibrary\x64\Debug\CurvesLibrary.dll
