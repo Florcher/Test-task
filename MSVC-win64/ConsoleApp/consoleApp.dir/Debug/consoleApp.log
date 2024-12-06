@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/Users/Florch/source/repos/Test task/ConsoleApp/CMakeLists.txt
+  main.cpp
+C:\Users\Florch\source\repos\Test task\ConsoleApp\main.cpp(10,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(42,20): warning C4506: no definition for inline function 'int Circle::Type(void)'
+  (compiling source file '../../ConsoleApp/main.cpp')
+  
+     Creating library C:/Users/Florch/source/repos/Test task/MSVC-win64/lib/Debug/consoleApp.lib and object C:/Users/Florch/source/repos/Test task/MSVC-win64/lib/Debug/consoleApp.exp
+  consoleApp.vcxproj -> C:\Users\Florch\source\repos\Test task\MSVC-win64\bin\Debug\consoleApp.exe

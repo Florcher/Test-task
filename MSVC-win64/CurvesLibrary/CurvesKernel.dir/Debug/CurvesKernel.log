@@ -1,0 +1,17 @@
+﻿  Building Custom Rule C:/Users/Florch/source/repos/Test task/CurvesLibrary/CMakeLists.txt
+  ObjectFactory.cpp
+  Objects.cpp
+C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(42,20): warning C4506: no definition for inline function 'int Circle::Type(void)'
+  (compiling source file '../../CurvesLibrary/ObjectFactory.cpp')
+  
+C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(93,20): warning C4506: no definition for inline function 'int Helix::Type(void)'
+  (compiling source file '../../CurvesLibrary/ObjectFactory.cpp')
+  
+C:\Users\Florch\source\repos\Test task\CurvesLibrary\Objects.h(67,20): warning C4506: no definition for inline function 'int Ellipse::Type(void)'
+  (compiling source file '../../CurvesLibrary/ObjectFactory.cpp')
+  
+  Point3D.cpp
+  Vector3D.cpp
+  Generating Code...
+     Creating library C:/Users/Florch/source/repos/Test task/MSVC-win64/lib/Debug/CurvesKernel.lib and object C:/Users/Florch/source/repos/Test task/MSVC-win64/lib/Debug/CurvesKernel.exp
+  CurvesKernel.vcxproj -> C:\Users\Florch\source\repos\Test task\MSVC-win64\bin\Debug\CurvesKernel.dll
