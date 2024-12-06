@@ -1,19 +1,18 @@
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-set(public_headers Comparison.h
+set(public_headers
 ObjectFactory.h
 Objects.h
 ObjectTypes.h
-Point3D.h
-Vector3D.h)
+Utils.h
+)
 
 list(APPEND SOURCE_FILES
 ${public_headers}
 ObjectFactory.cpp
 Objects.cpp
-Point3D.cpp
-Vector3D.cpp)
+)
 
 include(GenerateExportHeader)
 

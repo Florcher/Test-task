@@ -4,7 +4,7 @@
 #include "Objects.h"
 
 struct KERNEL_EXPORT ObjectFactory {
-	Object::ptr getObject(const int type);
+	static Object::ptr create(const int type);
 };
 
-#endif __OBJECTFACTORY_H_
+#endif

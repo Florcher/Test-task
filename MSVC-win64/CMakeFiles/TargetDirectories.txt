@@ -1,4 +1,0 @@
-C:/Users/Florch/source/repos/Test task/MSVC-win64/CMakeFiles/ALL_BUILD.dir
-C:/Users/Florch/source/repos/Test task/MSVC-win64/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Florch/source/repos/Test task/MSVC-win64/CurvesLibrary/CMakeFiles/CurvesKernel.dir
-C:/Users/Florch/source/repos/Test task/MSVC-win64/ConsoleApp/CMakeFiles/consoleApp.dir

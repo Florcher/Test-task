@@ -1,6 +1,6 @@
 #include "ObjectFactory.h"
 
-Object::ptr ObjectFactory::getObject(const int type) {
+Object::ptr ObjectFactory::create(const int type) {
 
 	if (type == Circle::Type())
 		return std::make_shared<Circle>();
