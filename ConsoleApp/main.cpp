@@ -53,7 +53,7 @@ int main() {
 			circles.push_back(std::dynamic_pointer_cast<Circle>(objects[i]));
 	}
 
-	std::sort(circles.begin(), circles.end(), [](auto lhs, auto rhs)
+	std::sort(circles.begin(), circles.end(), [](auto& lhs, auto& rhs)
 		{
 			return (*lhs).getRadius() < (*rhs).getRadius();
 		}
