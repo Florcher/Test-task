@@ -101,8 +101,4 @@ private:
 	double mParamB;
 };
 
-
-
-
-
 #endif __OBJECTS_H_

@@ -3,7 +3,7 @@
 #include <vector>
 #include "ObjectFactory.h"
 #include <algorithm>
-
+#include "Comparison.h"
 
 int main() {
 
@@ -23,9 +23,7 @@ int main() {
 		objects[i] = factory.getObject(type);
 		objects[i]->setID(i + 1);
 	}
-
 	
-
 	std::cout << "Enter max parameters value: " << std::endl;
 	int maxValue;
 	std::cin >> maxValue;
@@ -55,7 +53,7 @@ int main() {
 
 	std::sort(circles.begin(), circles.end(), [](auto& lhs, auto& rhs)
 		{
-			return (*lhs).getRadius() < (*rhs).getRadius();
+			return Less((*lhs).getRadius(), (*rhs).getRadius());
 		}
 	);
 		
@@ -69,6 +67,6 @@ int main() {
 	}
 
 	std::cout << "Total radius = " << totalRadius << std::endl;
-
+	
 	return 0;
 }

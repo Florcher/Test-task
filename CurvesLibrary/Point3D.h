@@ -4,9 +4,6 @@
 #include "Header.h"
 
 struct KERNEL_EXPORT Point3D {
-
-	friend std::ostream& operator<< (std::ostream& output, const Point3D& point);
-	friend std::istream& operator>> (std::istream&, Point3D&);
 	
 	void print() const;
 
@@ -16,8 +13,5 @@ struct KERNEL_EXPORT Point3D {
 
 	using ptr = std::shared_ptr<Point3D>;
 };
-
-
-
 
 #endif __POINT3D_H_
