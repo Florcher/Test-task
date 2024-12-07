@@ -17,11 +17,11 @@ bool inline LessOREqual(double x, double y, double epsilon = std::numeric_limits
 }
 
 inline int rndInt(int min, int max) {
-	return rand() % (max - min + 1) + min;
+	return (rand() % (max - min + 1) + min);
 }
 
 inline double rndDouble(double max) {
-	return static_cast<double>((rand()) / RAND_MAX * max);
+	return (double)(rand()) / RAND_MAX * max;
 }
 
 struct KERNEL_EXPORT Point3D {

@@ -125,7 +125,7 @@ Vector3D Helix::computeDerivative(const double param) const {
 
 	Vector3D vec;
 	vec.x = -mParamA * sin(param);
-	vec.y = mParamB* cos(param);
+	vec.y = mParamA* cos(param);
 	vec.z = mParamB;
 
 	return vec;

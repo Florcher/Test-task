@@ -7,6 +7,7 @@
 #include <memory>
 #include <iostream>
 
+
 template <class T>
 void print(T const& val) {
 	std::cout << "(" << val.x << ", " << val.y << ", " << val.z << ")" << std::endl;
@@ -34,7 +35,7 @@ std::vector<Object::ptr> createObjects(int size, double maxvalue) {
 	std::vector<Object::ptr> objects(size);
 
 	for (auto& obj : objects) {
-		obj = ObjectFactory::create(rndInt(0,3));
+		obj = ObjectFactory::create(rndInt(1,3));
 		fillObject(obj, maxvalue);
 	}
 	return objects;
